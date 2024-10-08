@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+}
+
+.image {
+    width: 300px; /* Set the width of the image */
+    height: 300px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image round */
+    animation: shake 0.1s infinite;
+}
+
+.red-background {
+    background-color: red;
+}
+
+.black-background {
+    background-color: black;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, 2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0); }
+}
+
+#glitch-text {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    animation: glitch 0.1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    10% { transform: translate(-2px, -2px); }
+    20% { transform: translate(2px, 2px); }
+    30% { transform: translate(-2px, -2px); }
+    40% { transform: translate(0); }
+    50% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    70% { transform: translate(0); }
+    80% { transform: translate(2px, 2px); }
+    90% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0); }
+}
